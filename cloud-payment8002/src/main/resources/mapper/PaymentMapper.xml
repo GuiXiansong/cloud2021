@@ -1,0 +1,18 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.cloud2021.cloudpayment8001.dao.db2.PaymentDao">
+    <insert id="create" parameterType="com.atguigu.cloud2021.entities.Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into payment(serial) values(#{serial})
+    </insert>
+
+    <resultMap id="paymentMap" type="com.atguigu.cloud2021.entities.Payment">
+        <id column="id" property="id"/>
+        <id column="serial" property="serial"/>
+    </resultMap>
+
+    <select id="getPaymentById" parameterType="long" resultMap="paymentMap">
+        select * from payment where id = #{id}
+    </select>
+</mapper>
