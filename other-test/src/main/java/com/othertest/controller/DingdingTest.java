@@ -1,6 +1,6 @@
 package com.othertest.controller;
 
-import com.othertest.pojo.TransformerLossAO;
+import com.othertest.pojo.TransForm;
 import com.othertest.socket.SocketTestTwo;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,9 +17,9 @@ public class DingdingTest {
     }
 
     @PostMapping("/queryDetailsOfCollectionOfElectricityCharges")
-    public String getA(@RequestBody TransformerLossAO transformerLossAO) {
+    public String getA(@RequestBody TransForm transForm) {
         System.out.println("哈哈哈哈哈");
-        System.out.println(transformerLossAO);
+        System.out.println(transForm);
         return "反悔了";
     }
 
