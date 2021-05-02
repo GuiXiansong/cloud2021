@@ -10,6 +10,7 @@
 .classpath
 *.cmd
 *.project
+*.class
 /cloud-provider-payment8004/src/main/java/com/atguigu/cloud2021/controller/TestSplit.java
 /Intranet_penetration/ip-port8080/src/test/java/SplitTest.java
 /jvm-test-02/src/main/java/com/pipigui/ExcelUtil.java
