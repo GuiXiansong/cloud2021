@@ -1,0 +1,5 @@
+#服务名
+spring:
+  application:
+    name: nacos-config-example
+#配置中心url
